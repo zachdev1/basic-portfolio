@@ -1,0 +1,200 @@
+html {
+    font-family: 'Poppins', sans-serif;  
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: fit-content;
+    text-align: center;
+}
+
+#header{
+    background-color: #8cbed6;
+    padding: 0.8rem;
+    text-align: right;
+    word-spacing: 1rem;
+    position: sticky;
+    top: 0px;
+    box-sizing: border-box;
+    z-index: 1;
+    
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#header a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+#header a:hover::before {
+    transform: scaleX(1);
+}
+
+
+.intro h1, h2 {
+    margin: 20px;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.intro h3{
+    margin: 0;
+    padding: 0;
+    color: #7f7f7f;
+}
+.intro p{
+    font-size: 1.2rem;
+}
+
+.social_icons{
+    position: fixed;
+    bottom: 1;
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+}
+
+.social_icons a{
+    text-decoration: none;
+    color: #7f7f7f;
+    position: relative;
+    margin-left: 25%;
+}
+
+.icon-item:hover {
+    color:#8cbed6;
+    transition: 0.5s ease-out;
+}
+
+.back-to-top-icon {
+    padding-top: 5rem;
+}
+
+.top-icon:hover {
+    color:#8cbed6;
+    transition: 0.5s ease-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+li{
+    list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+
+.portfolio-picture a:hover  span{
+    position: relative; 
+}
+
+.portfolio-picture{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+}
+
+.portfolio h1 {
+    margin-top: 25rem;
+    padding: 0;
+}
+
+.portfolio img {
+    width:  300px;
+    height: 250px;
+    margin: 0 50px;
+    flex: 50%;
+    padding: 0 4px;
+    vertical-align: middle;    
+}
+
+img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+
+.about h1{
+    margin-top: 25rem;
+    padding: 0;
+}
+
+.about h2 {
+    margin-top: 10rem;
+    padding: 0;
+}
+
+.about p {
+   margin: 0 25% ;
+   width: 50%;
+   font-size: 1.2rem;
+}
+
+
+ul.skills {
+    display: grid;
+    grid-template-columns: 50% 25%;
+    margin: 100px 25% ;
+    width: 50%;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+}
+
+li.ul.skills:hover{
+    background-color: black;
+}
+
+footer{
+    background-color: #8cbed6;
+    padding: 0.2rem;
+    text-align: center;
+    position: sticky;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    margin-left: 40%;
+}
+
+footer a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+footer a:hover::before {
+    transform: scaleX(1);
+}
